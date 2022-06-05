@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="styles.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=10" <h1 id="title">
+  <h1>Candle Survey Form - Smells Co.</h1>
+  <p id="description">This very short 60 second will help us to get a better idea of what people love about candles</p>
+</head>
+
+<body>
+  <fieldset>
+    <section>
+      <h2>First, your information:</h2>
+      <form id="survey-form">
+
+        <label id="name-label"> Name:
+          <input id="name" type="text" placeholder="Your name" required />
+        </label>
+
+        <label id="email-label"> Email:
+          <input id="email" type="email" placeholder="Your email" required /> </label>
+
+        <label id="number-label"> Age:
+          <input id="number" type="number" min="13" max="120" placeholder="Your age" required> </label>
+    </section>
+    <section>
+      <label>Gender: </label>
+      <select id="dropdown" name="gender">
+        <option value="Female">Female</option>
+        <option value="Male">Male</option>
+        <option>Prefer not to say</option>
+      </select>
+      <label> Current role: </label>
+      <select id="dropdown" name="role">
+        <option value="student">Student</option>
+        <option value="Employed">Employed</option>
+        <option value="Unemployed">Unemployed</option>
+        <option value="independent">Independent</option>
+        <option>Prefer not to say</option><br><br>
+      </select>
+    </section>
+    <section>
+      <h2>Then, some questions:</h2>
+      <div>
+        <label>1. Do you burn scented candles at home?</label><br>
+        <input id="Yes" type="radio" name="Yes-No-Sometimes" value="Yes"><label for="Yes">Yes</label><br>
+        <input id="No" type="radio" name="Yes-No-Sometimes" value="No"> <label for="No">No</label><br>
+        <input id="Sometimes" type="radio" name="Yes-No-Sometimes" value="Sometimes"> <label
+          for="Sometimes">Sometimes</label>
+      </div>
+      <div><br>
+        <label>2. How often do you use candles?</label><br>
+        <select id="dropdown" name="use">
+          <option value="Daily">Daily</option>
+          <option value="4-5">4-5 times per week</option>
+          <option value="2-3">2-3 times per week</option>
+          <option value="1">Once</option>
+          <option value="0">Never</option>
+        </select>
+      </div>
+
+      <div><br>
+        <label>3. Why do you burn candles?</label><br>
+        <label for="Ambience and atmosphere"> <input id="Ambience and atmosphere" type="checkbox" name="why"
+            value="Ambience and atmosphere">Ambience and atmosphere </label><br>
+
+        <label for="Celebrations"> <input id="Celebrations" type="checkbox" name="why" value="Celebrations">Celebrations
+        </label><br>
+
+        <label for="Romance"> <input id="Romance" type="checkbox" name="why" value="Romance">Romance </label><br>
+
+        <label for="Decor"> <input id="Decor" type="checkbox" name="why" value="Decor">Decor </label><br>
+
+        <label for="Fragance"> <input id="Fragance" type="checkbox" name="why" value="Fragance">Fragance </label><br>
+
+        <label for="Health"> <input id="health" type="checkbox" name="why" value="Health">Health </label><br>
+
+        <label for="Meditation and prayer"> <input id="Medication and prayer" type="checkbox" name="why"
+            value="Meditation and prayer">Meditation and prayer </label><br>
+
+        <label for="Remembrance and support"> <input id="Remembrance and support" type="checkbox" name="why"
+            value="Remembrance and support">Remembrance and support </label>
+      </div>
+      <div><br>
+        <label>4. What kind of fragrances do you enjoy?</label><br>
+        <label for="Floral Scents"><input id="Floral" type="checkbox" name="Fragances" value="Floral">Floral
+          Scents</label><br>
+        <label for="Fruity Scents"><input id="Fruity" type="checkbox" name="Fragances" value="Fruity">Fruity
+        </label><br>
+        <label for="Fresh Clean Scents"> <input id="Fresh clean" type="checkbox" name="Fragances"
+            value="Fresh clean">Fresh Clean Scents</label><br>
+        <label for="Strong Scents"><input id="Strong" type="checkbox" name="Fragances" value="Strong">Strong
+          Scents(coffee, lather or smoked wood)</label><br>
+        <label for="Seasonal Scents"><input id="season" type="checkbox" name="Fragances" value="seasonal">Seasonal
+          Scents(spring, summer, winter) </label>
+      </div>
+      <div><br>
+        <label>5. What type of color candle do you prefer? </label><br>
+        <label for="White"><input id="white" type="checkbox" name="colors" value="white">White</label><br>
+        <label for="Dark colors"><input id="dark" type="checkbox" name="colors" value="dark">Dark Colors</label><br>
+        <label for="Assorted colors"><input id="assorted" type="checkbox" name="colors"
+            value="assorted">Assorted(primary, secondary and tertiary colors)</label>
+      </div>
+      <div>
+    </section>
+    <h3>Now, your turn:</h3>
+    <label>Tell us what's your favorite part about candles, what scents do you love, what do you feel about candles,
+      what mood do you enjoy candles de most, etc...?<br>
+      <textarea rows="5" cols="130"
+        placeholder="E.g. I love candles because they brings calm to my enviorement..."></textarea></label>
+    </div><br><br>
+    <p>Thanks for participating!
+      <input id="submit" type="submit" value="submit">
+    </p>
+  </fieldset>
+</body>
+</form>
